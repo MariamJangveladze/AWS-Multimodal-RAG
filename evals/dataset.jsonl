@@ -1,0 +1,4 @@
+{"id":"en-character","query":"Who is Avtandil?","expected_language":"en","expected_phrase":"courageous commander"}
+{"id":"ka-character","query":"ვინ არის ავთანდილი?","expected_language":"ka","expected_phrase":"მამაცი სარდალია"}
+{"id":"ar-character","query":"من هو أفتانديل؟","expected_language":"ar","expected_phrase":"قائد شجاع"}
+{"id":"en-themes","query":"What themes does the poem explore?","expected_language":"en","expected_phrase":"friendship"}

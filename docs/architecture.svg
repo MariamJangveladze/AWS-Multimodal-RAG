@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+  <title id="title">AWS Multimodal RAG architecture</title>
+  <desc id="desc">Request flows through FastAPI, retrieval, FAISS and S3, then Amazon Bedrock, observability, and a grounded response.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0d1020"/><stop offset="1" stop-color="#171b32"/></linearGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-opacity=".3"/></filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#8a91ad"/></marker>
+  </defs>
+  <rect width="1200" height="520" rx="28" fill="url(#bg)"/>
+  <text x="58" y="62" fill="#f7f7fb" font-family="Inter,Arial" font-size="27" font-weight="700">AWS Multimodal RAG · Backend System</text>
+  <text x="58" y="91" fill="#9ca4c2" font-family="Inter,Arial" font-size="15">Multilingual text + image retrieval with grounded evidence and measurable inference</text>
+  <g font-family="Inter,Arial" filter="url(#shadow)">
+    <g transform="translate(58 165)"><rect width="175" height="112" rx="18" fill="#252b48" stroke="#525b82"/><text x="22" y="40" fill="#f5f6ff" font-size="18" font-weight="700">POST /v1/ask</text><text x="22" y="70" fill="#aeb5d0" font-size="14">EN · KA · AR</text><text x="22" y="91" fill="#aeb5d0" font-size="14">bounded request</text></g>
+    <g transform="translate(297 165)"><rect width="190" height="112" rx="18" fill="#2b2550" stroke="#7564c4"/><text x="22" y="40" fill="#f5f6ff" font-size="18" font-weight="700">RAG service</text><text x="22" y="70" fill="#c4bcec" font-size="14">request lifecycle</text><text x="22" y="91" fill="#c4bcec" font-size="14">citations · timing</text></g>
+    <g transform="translate(551 119)"><rect width="190" height="112" rx="18" fill="#173c46" stroke="#3e8b94"/><text x="22" y="40" fill="#f5f6ff" font-size="18" font-weight="700">Nova Embeddings</text><text x="22" y="70" fill="#a9d9d8" font-size="14">shared vector space</text><text x="22" y="91" fill="#a9d9d8" font-size="14">text + images</text></g>
+    <g transform="translate(551 281)"><rect width="190" height="112" rx="18" fill="#163344" stroke="#3b7ca2"/><text x="22" y="40" fill="#f5f6ff" font-size="18" font-weight="700">FAISS + S3</text><text x="22" y="70" fill="#aed1e5" font-size="14">private evidence</text><text x="22" y="91" fill="#aed1e5" font-size="14">pre-signed media</text></g>
+    <g transform="translate(805 165)"><rect width="175" height="112" rx="18" fill="#49351b" stroke="#b98842"/><text x="22" y="40" fill="#fff9ee" font-size="18" font-weight="700">Nova Pro</text><text x="22" y="70" fill="#ead1aa" font-size="14">grounded answer</text><text x="22" y="91" fill="#ead1aa" font-size="14">multimodal context</text></g>
+    <g transform="translate(1022 165)"><rect width="130" height="112" rx="18" fill="#38243e" stroke="#9461a0"/><text x="18" y="40" fill="#fff5ff" font-size="17" font-weight="700">Response</text><text x="18" y="68" fill="#dcbce1" font-size="13">answer</text><text x="18" y="88" fill="#dcbce1" font-size="13">image · proof</text></g>
+  </g>
+  <g stroke="#8a91ad" stroke-width="2.5" fill="none" marker-end="url(#arrow)"><path d="M233 221 H286"/><path d="M487 205 C520 205 520 175 540 175"/><path d="M646 231 V270"/><path d="M741 221 H794"/><path d="M980 221 H1011"/></g>
+  <rect x="297" y="430" width="683" height="50" rx="14" fill="#202642" stroke="#454e73"/><text x="638" y="461" text-anchor="middle" fill="#bfc6df" font-family="Inter,Arial" font-size="14">Structured telemetry · request ID · latency · tokens · estimated cost · citation coverage</text>
+</svg>

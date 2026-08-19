@@ -1,0 +1,38 @@
+[
+  {
+    "item_id": "demo-en-avtandil",
+    "type": "text",
+    "title": "Avtandil - demo knowledge card",
+    "language": "en",
+    "content": "Avtandil is a courageous commander whose loyalty and friendship drive the search for Tariel and Nestan-Darejan."
+  },
+  {
+    "item_id": "demo-ka-avtandil",
+    "type": "text",
+    "title": "ავთანდილი - სადემონსტრაციო ბარათი",
+    "language": "ka",
+    "content": "ავთანდილი მამაცი სარდალია, რომლის ერთგულება და მეგობრობა ტარიელისა და ნესტან-დარეჯანის ძიებას წარმართავს."
+  },
+  {
+    "item_id": "demo-ar-avtandil",
+    "type": "text",
+    "title": "أفتانديل - بطاقة تجريبية",
+    "language": "ar",
+    "content": "أفتانديل قائد شجاع، ويقود ولاؤه وصداقته رحلة البحث عن تارييل ونستان داريجان."
+  },
+  {
+    "item_id": "demo-en-themes",
+    "type": "text",
+    "title": "Major themes - demo knowledge card",
+    "language": "en",
+    "content": "The poem explores friendship, loyalty, love, courage, justice, and the responsibilities of leadership."
+  },
+  {
+    "item_id": "demo-image-avtandil",
+    "type": "image",
+    "title": "Avtandil illustration placeholder",
+    "language": null,
+    "content": "Avtandil character illustration",
+    "image_url": "https://placehold.co/800x500/png?text=Avtandil+Illustration"
+  }
+]

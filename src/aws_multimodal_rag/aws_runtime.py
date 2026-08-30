@@ -107,7 +107,12 @@ class AwsRuntime:
         if not item.s3_key:
             return None
         response = self.s3.get_object(Bucket=self.settings.s3_bucket, Key=item.s3_key)
-        image_bytes = response["Body"].read()
+        content_length = int(response.get("ContentLength", 0))
+        if content_length > self.settings.max_image_bytes:
+            raise ValueError("Retrieved image exceeds the configured size limit")
+        image_bytes = response["Body"].read(self.settings.max_image_bytes + 1)
+        if len(image_bytes) > self.settings.max_image_bytes:
+            raise ValueError("Retrieved image exceeds the configured size limit")
         suffix = item.s3_key.rsplit(".", 1)[-1].lower().replace("jpg", "jpeg")
         return {
             "image": {

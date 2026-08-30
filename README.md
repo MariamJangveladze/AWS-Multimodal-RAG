@@ -111,9 +111,15 @@ The response includes:
 Build the supplied container for ECS/Fargate, App Runner, or Lambda container images. For an
 internet-facing deployment, place API Gateway or an Application Load Balancer in front and add
 authentication, throttling, WAF controls, and approved request-log handling.
+The `/v1/ask` endpoint requires `RAG_API_TOKEN` as a bearer token in every mode.
 
 ## Scope
 
 This is a portfolio reference implementation. It does not include the original copyrighted/source
 corpus or AWS account resources. The local fixtures are synthetic demonstrations; connect your own
 authorized data and rebuild the index for AWS execution.
+
+## Usage and copyright
+
+Portfolio review only. No open-source license is granted. See [COPYRIGHT.md](COPYRIGHT.md)
+and report security concerns privately as described in [SECURITY.md](SECURITY.md).

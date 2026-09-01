@@ -1,4 +1,5 @@
-{"id":"en-character","query":"Who is Avtandil?","expected_language":"en","expected_phrase":"courageous commander"}
-{"id":"ka-character","query":"ვინ არის ავთანდილი?","expected_language":"ka","expected_phrase":"მამაცი სარდალია"}
-{"id":"ar-character","query":"من هو أفتانديل؟","expected_language":"ar","expected_phrase":"قائد شجاع"}
-{"id":"en-themes","query":"What themes does the poem explore?","expected_language":"en","expected_phrase":"friendship"}
+{"id":"en-character","query":"Who is Avtandil?","expected_language":"en","expected_phrase":"courageous commander","expected_source_ids":["demo-en-avtandil"]}
+{"id":"ka-character","query":"ვინ არის ავთანდილი?","expected_language":"ka","expected_phrase":"მამაცი სარდალია","expected_source_ids":["demo-ka-avtandil"]}
+{"id":"ar-character","query":"من هو أفتانديل؟","expected_language":"ar","expected_phrase":"قائد شجاع","expected_source_ids":["demo-ar-avtandil"]}
+{"id":"en-themes","query":"What themes does the poem explore?","expected_language":"en","expected_phrase":"friendship","expected_source_ids":["demo-en-themes"]}
+{"id":"unsupported","query":"What is the capital of France?","expected_language":"en","expected_phrase":"Not enough evidence","expected_source_ids":[]}

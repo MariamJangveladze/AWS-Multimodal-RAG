@@ -34,15 +34,22 @@ Read the [case study](docs/CASE_STUDY.md), [architecture decisions](docs/ARCHITE
 Prerequisites: Python 3.11+ and [uv](https://docs.astral.sh/uv/).
 
 ```bash
+cp .env.example .env
+# Set RAG_API_TOKEN to your own local test value.
 uv sync --extra dev
 uv run uvicorn aws_multimodal_rag.api:app --reload
 ```
+
+Testing the protected API requires the reviewer's own `RAG_API_TOKEN`. The
+repository does not include API keys, AWS credentials, or reusable secret
+values. Local mode does not require a model-provider key or make AWS calls.
 
 Open `http://127.0.0.1:8000/docs`, or call:
 
 ```bash
 curl -X POST http://127.0.0.1:8000/v1/ask \
   -H 'Content-Type: application/json' \
+  -H 'Authorization: Bearer <your-local-RAG_API_TOKEN>' \
   -d '{"query":"Who is Avtandil?"}'
 ```
 
@@ -58,8 +65,11 @@ uv run pytest -q
 uv run rag-eval
 ```
 
-The included evaluation suite measures language accuracy, citation coverage, and expected-content
-checks across the three supported languages.
+The included local evaluation suite is a deterministic workflow regression—not
+a claim about Bedrock model quality. It checks language contracts, exact
+retrieved source IDs, citation presence/absence, expected content, and an
+unsupported question that must return insufficient evidence. Live model
+quality should be evaluated separately with the reviewer's own AWS access.
 
 ## Enable AWS mode
 
